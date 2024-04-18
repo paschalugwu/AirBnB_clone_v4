@@ -1,7 +1,7 @@
 const selectedAmenities = {};
 $(document).ready(function () {
   /* check api status */
-  $.get('http://0.0.0.0:5001/api/v1/status', function (res, status) {
+  $.get('http://127.0.0.1:5003/api/v1/status', function (res, status) {
     if (status === 'success') {
       if (res.status === 'OK') {
         $('div#api_status').addClass('available');
